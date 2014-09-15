@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
     vector<string> v;
-    ifstream in("exe07.cpp");
+    ifstream in("exeo2.cpp");
     string line;
     while (getline(in, line)) {
         v.push_back(line);

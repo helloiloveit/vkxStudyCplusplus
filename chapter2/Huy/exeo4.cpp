@@ -14,18 +14,20 @@ int countString(string str, char countChar)
 
 
 int main() {
-    unsigned char countChar;
+    string countChar;
+   while(true){
     cout << " input char want to count "<<endl;
     cin >> countChar;
-    ifstream in("exeo2.cpp"); // Open for reading
-    ofstream out("temp.cpp"); // Open for writing
-    string s;
-    int totalCount = 0;
-    while(getline(in, s)){ // Discards newline char
-        int rst =countString(s, countChar);
-        //cout <<"space = "<<rst<<endl;
-        totalCount = totalCount + rst;
-        
-    }
-    cout <<"result is = "<<totalCount<<endl;
+    cout<<"char is "<<countChar<<endl;
+    if (countChar == "quit") {
+	break;
+   }
+    if (countChar == "hello") {
+	cout<<"hello"<<endl;
+   }
+    if (countChar == "goodbye") {
+	cout<<"goodbye"<<endl;
+   }
+   }
+
 } ///:~

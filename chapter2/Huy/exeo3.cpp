@@ -14,13 +14,12 @@ int countString(string str, char countChar)
 
 
 int main() {
-    ifstream in("exeo2.cpp"); // Open for reading
+    ifstream in("exeo3.cpp"); // Open for reading
     ofstream out("temp.cpp"); // Open for writing
     string s;
     int totalCount = 0;
     while(getline(in, s)){ // Discards newline char
         int rst =countString(s, ' ');
-        //cout <<"space = "<<rst<<endl;
         totalCount = totalCount + rst;
         
     }
