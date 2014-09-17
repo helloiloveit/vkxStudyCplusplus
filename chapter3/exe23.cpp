@@ -12,6 +12,10 @@ typedef union {
 int main() {
     Primitives p[10];
     Primitives* pp = p;
+    cout <<"address of &p"<< &p <<endl;
+    cout <<"value of p " << p << endl;
+    cout <<"value of pp " << pp << endl;
+    cout <<"value of &pp " << &pp << endl;
     cout << "sizeof(Primitives) = "
     << sizeof(Primitives) << endl;
     cout << "pp = " << (long)pp << endl;

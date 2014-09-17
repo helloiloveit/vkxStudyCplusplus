@@ -1,0 +1,19 @@
+CC=g++
+OFLAG = -o
+.SUFFIXES :.o .cpp
+.cpp.o:$(CC) $(CPPFLAGS) -c $<
+
+all:\
+	 exe28\
+    	exe27
+
+exe28: exe28.o 
+	$(CC)  exe28.o -o exe28 
+	./exe28
+
+exe27: exe27.o 
+	$(CC)  exe27.o -o exe27 
+	./exe27
+
+clean: 
+	rm -rf  exe28 exe27

@@ -1,0 +1,16 @@
+CC=g++
+OFLAG = -o
+.SUFFIXES :.o .cpp
+.cpp.o:$(CC) $(CPPFLAGS) -c $<
+
+all:\
+	 exe35
+
+exe35: exe35.o 
+	$(CC)  exe35.o -o exe35
+
+debug: exe35.o
+	$(CC)  -DDEBUG_FLAG  -o exe35 exe35.o
+
+clean: 
+	rm -rf  exe35 

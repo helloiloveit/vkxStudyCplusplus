@@ -7,10 +7,10 @@ using namespace std;
 
 typedef struct {
     int number;
+    double  number4;
     char letter;
-    int number2;
-    long number3;
-    char letter2;
+    float number2;
+    double  number3;
 }home;
 
 int main(){
@@ -18,11 +18,10 @@ int main(){
     home hanoi;
     P(hanoi);
     P(hanoi.number);
-    
+    P(hanoi.number4);
     P_char(hanoi.letter);
         P(hanoi.number2);
         P(hanoi.number3);
-    P_char(hanoi.letter2);
     P(next_var);
 
     

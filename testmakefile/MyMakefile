@@ -1,0 +1,17 @@
+CC=g++
+OFLAG = -o
+.SUFFIXES :.o .cpp
+.cpp.o:
+	$(CC) $.<
+
+all: hello
+
+hello: main.o
+	 $(CC)  main.o -o hello
+
+
+hello.o: hello.cpp
+	g++ -c hello.cpp
+
+clean:
+	rm -rf *o hello
