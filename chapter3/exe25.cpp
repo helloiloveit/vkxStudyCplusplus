@@ -12,7 +12,7 @@ void printBinary(const unsigned char val) {
 
 
 int main() {
-    float number = -11.12;
+    float number = -1.1;
     P(number);
 
     unsigned char* bytes = (unsigned char*)&number;
