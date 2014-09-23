@@ -33,6 +33,9 @@ void sign_value(const unsigned char val){
     if (val&0x80) {
         cout<<"sign bit is 1"<<endl;
     }
+    else{
+       cout<<"sign bit is 0"<<endl;
+    }
 }
 
 void exponent_value(const unsigned char first_byte, const unsigned char second_byte){
@@ -42,7 +45,7 @@ void exponent_value(const unsigned char first_byte, const unsigned char second_b
     cout<<endl;
 }
 void fraction_value(const unsigned char second_byte, const unsigned char third_byte, const unsigned char last_byte){
-    cout<<"fraction_value (32 bit) : ";
+    cout<<"fraction_value (23 bit) : ";
     printBinary_by_size(second_byte, 6, 0);
     printBinary_by_size(third_byte, 7, 0);
     printBinary_by_size(last_byte, 7, 0);
@@ -51,7 +54,7 @@ void fraction_value(const unsigned char second_byte, const unsigned char third_b
 
 int main() {
     check_endian();
-    float number = -1.1;
+    float number = 1.1;
     P(number);
     
     unsigned char* bytes = (unsigned char*)&number;

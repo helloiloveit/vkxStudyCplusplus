@@ -1,0 +1,405 @@
+	.section	__TEXT,__text,regular,pure_instructions
+	.section	__DWARF,__debug_info,regular,debug
+Lsection_info:
+	.section	__DWARF,__debug_abbrev,regular,debug
+Lsection_abbrev:
+	.section	__DWARF,__debug_aranges,regular,debug
+	.section	__DWARF,__debug_macinfo,regular,debug
+	.section	__DWARF,__debug_line,regular,debug
+Lsection_line:
+	.section	__DWARF,__debug_loc,regular,debug
+	.section	__DWARF,__debug_str,regular,debug
+Linfo_string:
+	.section	__DWARF,__debug_ranges,regular,debug
+Ldebug_range:
+	.section	__DWARF,__debug_loc,regular,debug
+Lsection_debug_loc:
+	.file	1 "exe3.cpp"
+	.file	2 "./common.h"
+	.file	3 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config"
+	.section	__TEXT,__text,regular,pure_instructions
+	.globl	_main
+	.align	4, 0x90
+_main:                                  ## @main
+Lfunc_begin0:
+	.loc	1 7 0                   ## exe3.cpp:7:0
+	.cfi_startproc
+## BB#0:
+	pushq	%rbp
+Ltmp2:
+	.cfi_def_cfa_offset 16
+Ltmp3:
+	.cfi_offset %rbp, -16
+	movq	%rsp, %rbp
+Ltmp4:
+	.cfi_def_cfa_register %rbp
+	subq	$16, %rsp
+	leaq	-8(%rbp), %rdi
+	.loc	1 9 0 prologue_end      ## exe3.cpp:9:0
+Ltmp5:
+	callq	__ZN10single_mem10single_funEv
+	xorl	%eax, %eax
+	.loc	1 12 0                  ## exe3.cpp:12:0
+	addq	$16, %rsp
+	popq	%rbp
+	retq
+Ltmp6:
+Lfunc_end0:
+	.cfi_endproc
+
+Ldebug_end0:
+	.section	__DWARF,__debug_str,regular,debug
+Linfo_string0:
+	.asciz	"Apple LLVM version 6.0 (clang-600.0.51) (based on LLVM 3.5svn)"
+Linfo_string1:
+	.asciz	"exe3.cpp"
+Linfo_string2:
+	.asciz	"/Users/mac/Documents/vkxStudyCplusplus/chapter4"
+Linfo_string3:
+	.asciz	"main"
+Linfo_string4:
+	.asciz	"int"
+Linfo_string5:
+	.asciz	"_ZN10single_mem10single_funEv"
+Linfo_string6:
+	.asciz	"single_fun"
+Linfo_string7:
+	.asciz	"single_mem"
+Linfo_string8:
+	.asciz	"std"
+Linfo_string9:
+	.asciz	"sample"
+	.section	__DWARF,__debug_info,regular,debug
+L__DWARF__debug_info_begin0:
+	.long	143                     ## Length of Unit
+	.short	2                       ## DWARF version number
+Lset0 = Lsection_abbrev-Lsection_abbrev ## Offset Into Abbrev. Section
+	.long	Lset0
+	.byte	8                       ## Address Size (in bytes)
+	.byte	1                       ## Abbrev [1] 0xb:0x88 DW_TAG_compile_unit
+Lset1 = Linfo_string0-Linfo_string      ## DW_AT_producer
+	.long	Lset1
+	.short	4                       ## DW_AT_language
+Lset2 = Linfo_string1-Linfo_string      ## DW_AT_name
+	.long	Lset2
+	.long	0                       ## DW_AT_stmt_list
+Lset3 = Linfo_string2-Linfo_string      ## DW_AT_comp_dir
+	.long	Lset3
+	.byte	1                       ## DW_AT_APPLE_optimized
+	.quad	0                       ## DW_AT_low_pc
+	.byte	2                       ## Abbrev [2] 0x27:0x2e DW_TAG_subprogram
+Lset4 = Linfo_string3-Linfo_string      ## DW_AT_name
+	.long	Lset4
+	.byte	1                       ## DW_AT_decl_file
+	.byte	7                       ## DW_AT_decl_line
+	.long	85                      ## DW_AT_type
+	.byte	1                       ## DW_AT_external
+	.byte	1                       ## DW_AT_accessibility
+                                        ## DW_ACCESS_public
+	.quad	Lfunc_begin0            ## DW_AT_low_pc
+	.quad	Lfunc_end0              ## DW_AT_high_pc
+	.byte	1                       ## DW_AT_frame_base
+	.byte	86
+	.byte	3                       ## Abbrev [3] 0x46:0xe DW_TAG_variable
+Lset5 = Linfo_string9-Linfo_string      ## DW_AT_name
+	.long	Lset5
+	.byte	1                       ## DW_AT_decl_file
+	.byte	8                       ## DW_AT_decl_line
+	.long	92                      ## DW_AT_type
+	.byte	2                       ## DW_AT_location
+	.byte	145
+	.byte	120
+	.byte	0                       ## End Of Children Mark
+	.byte	4                       ## Abbrev [4] 0x55:0x7 DW_TAG_base_type
+Lset6 = Linfo_string4-Linfo_string      ## DW_AT_name
+	.long	Lset6
+	.byte	5                       ## DW_AT_encoding
+	.byte	4                       ## DW_AT_byte_size
+	.byte	5                       ## Abbrev [5] 0x5c:0x22 DW_TAG_structure_type
+Lset7 = Linfo_string7-Linfo_string      ## DW_AT_name
+	.long	Lset7
+	.byte	1                       ## DW_AT_byte_size
+	.byte	2                       ## DW_AT_decl_file
+	.byte	7                       ## DW_AT_decl_line
+	.byte	6                       ## Abbrev [6] 0x64:0x19 DW_TAG_subprogram
+Lset8 = Linfo_string5-Linfo_string      ## DW_AT_MIPS_linkage_name
+	.long	Lset8
+Lset9 = Linfo_string6-Linfo_string      ## DW_AT_name
+	.long	Lset9
+	.byte	2                       ## DW_AT_decl_file
+	.byte	8                       ## DW_AT_decl_line
+	.long	85                      ## DW_AT_type
+	.byte	1                       ## DW_AT_declaration
+	.byte	1                       ## DW_AT_external
+	.byte	1                       ## DW_AT_accessibility
+                                        ## DW_ACCESS_public
+	.byte	7                       ## Abbrev [7] 0x76:0x6 DW_TAG_formal_parameter
+	.long	126                     ## DW_AT_type
+	.byte	1                       ## DW_AT_artificial
+	.byte	0                       ## End Of Children Mark
+	.byte	0                       ## End Of Children Mark
+	.byte	8                       ## Abbrev [8] 0x7e:0x5 DW_TAG_pointer_type
+	.long	92                      ## DW_AT_type
+	.byte	9                       ## Abbrev [9] 0x83:0x8 DW_TAG_namespace
+Lset10 = Linfo_string8-Linfo_string     ## DW_AT_name
+	.long	Lset10
+	.byte	3                       ## DW_AT_decl_file
+	.short	349                     ## DW_AT_decl_line
+	.byte	10                      ## Abbrev [10] 0x8b:0x7 DW_TAG_imported_module
+	.byte	1                       ## DW_AT_decl_file
+	.byte	3                       ## DW_AT_decl_line
+	.long	131                     ## DW_AT_import
+	.byte	0                       ## End Of Children Mark
+L__DWARF__debug_info_end0:
+	.section	__DWARF,__debug_abbrev,regular,debug
+	.byte	1                       ## Abbreviation Code
+	.byte	17                      ## DW_TAG_compile_unit
+	.byte	1                       ## DW_CHILDREN_yes
+	.byte	37                      ## DW_AT_producer
+	.byte	14                      ## DW_FORM_strp
+	.byte	19                      ## DW_AT_language
+	.byte	5                       ## DW_FORM_data2
+	.byte	3                       ## DW_AT_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	16                      ## DW_AT_stmt_list
+	.byte	6                       ## DW_FORM_data4
+	.byte	27                      ## DW_AT_comp_dir
+	.byte	14                      ## DW_FORM_strp
+	.ascii	"\341\177"              ## DW_AT_APPLE_optimized
+	.byte	12                      ## DW_FORM_flag
+	.byte	17                      ## DW_AT_low_pc
+	.byte	1                       ## DW_FORM_addr
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	2                       ## Abbreviation Code
+	.byte	46                      ## DW_TAG_subprogram
+	.byte	1                       ## DW_CHILDREN_yes
+	.byte	3                       ## DW_AT_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	58                      ## DW_AT_decl_file
+	.byte	11                      ## DW_FORM_data1
+	.byte	59                      ## DW_AT_decl_line
+	.byte	11                      ## DW_FORM_data1
+	.byte	73                      ## DW_AT_type
+	.byte	19                      ## DW_FORM_ref4
+	.byte	63                      ## DW_AT_external
+	.byte	12                      ## DW_FORM_flag
+	.byte	50                      ## DW_AT_accessibility
+	.byte	11                      ## DW_FORM_data1
+	.byte	17                      ## DW_AT_low_pc
+	.byte	1                       ## DW_FORM_addr
+	.byte	18                      ## DW_AT_high_pc
+	.byte	1                       ## DW_FORM_addr
+	.byte	64                      ## DW_AT_frame_base
+	.byte	10                      ## DW_FORM_block1
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	3                       ## Abbreviation Code
+	.byte	52                      ## DW_TAG_variable
+	.byte	0                       ## DW_CHILDREN_no
+	.byte	3                       ## DW_AT_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	58                      ## DW_AT_decl_file
+	.byte	11                      ## DW_FORM_data1
+	.byte	59                      ## DW_AT_decl_line
+	.byte	11                      ## DW_FORM_data1
+	.byte	73                      ## DW_AT_type
+	.byte	19                      ## DW_FORM_ref4
+	.byte	2                       ## DW_AT_location
+	.byte	10                      ## DW_FORM_block1
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	4                       ## Abbreviation Code
+	.byte	36                      ## DW_TAG_base_type
+	.byte	0                       ## DW_CHILDREN_no
+	.byte	3                       ## DW_AT_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	62                      ## DW_AT_encoding
+	.byte	11                      ## DW_FORM_data1
+	.byte	11                      ## DW_AT_byte_size
+	.byte	11                      ## DW_FORM_data1
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	5                       ## Abbreviation Code
+	.byte	19                      ## DW_TAG_structure_type
+	.byte	1                       ## DW_CHILDREN_yes
+	.byte	3                       ## DW_AT_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	11                      ## DW_AT_byte_size
+	.byte	11                      ## DW_FORM_data1
+	.byte	58                      ## DW_AT_decl_file
+	.byte	11                      ## DW_FORM_data1
+	.byte	59                      ## DW_AT_decl_line
+	.byte	11                      ## DW_FORM_data1
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	6                       ## Abbreviation Code
+	.byte	46                      ## DW_TAG_subprogram
+	.byte	1                       ## DW_CHILDREN_yes
+	.ascii	"\207@"                 ## DW_AT_MIPS_linkage_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	3                       ## DW_AT_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	58                      ## DW_AT_decl_file
+	.byte	11                      ## DW_FORM_data1
+	.byte	59                      ## DW_AT_decl_line
+	.byte	11                      ## DW_FORM_data1
+	.byte	73                      ## DW_AT_type
+	.byte	19                      ## DW_FORM_ref4
+	.byte	60                      ## DW_AT_declaration
+	.byte	12                      ## DW_FORM_flag
+	.byte	63                      ## DW_AT_external
+	.byte	12                      ## DW_FORM_flag
+	.byte	50                      ## DW_AT_accessibility
+	.byte	11                      ## DW_FORM_data1
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	7                       ## Abbreviation Code
+	.byte	5                       ## DW_TAG_formal_parameter
+	.byte	0                       ## DW_CHILDREN_no
+	.byte	73                      ## DW_AT_type
+	.byte	19                      ## DW_FORM_ref4
+	.byte	52                      ## DW_AT_artificial
+	.byte	12                      ## DW_FORM_flag
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	8                       ## Abbreviation Code
+	.byte	15                      ## DW_TAG_pointer_type
+	.byte	0                       ## DW_CHILDREN_no
+	.byte	73                      ## DW_AT_type
+	.byte	19                      ## DW_FORM_ref4
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	9                       ## Abbreviation Code
+	.byte	57                      ## DW_TAG_namespace
+	.byte	0                       ## DW_CHILDREN_no
+	.byte	3                       ## DW_AT_name
+	.byte	14                      ## DW_FORM_strp
+	.byte	58                      ## DW_AT_decl_file
+	.byte	11                      ## DW_FORM_data1
+	.byte	59                      ## DW_AT_decl_line
+	.byte	5                       ## DW_FORM_data2
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	10                      ## Abbreviation Code
+	.byte	58                      ## DW_TAG_imported_module
+	.byte	0                       ## DW_CHILDREN_no
+	.byte	58                      ## DW_AT_decl_file
+	.byte	11                      ## DW_FORM_data1
+	.byte	59                      ## DW_AT_decl_line
+	.byte	11                      ## DW_FORM_data1
+	.byte	24                      ## DW_AT_import
+	.byte	19                      ## DW_FORM_ref4
+	.byte	0                       ## EOM(1)
+	.byte	0                       ## EOM(2)
+	.byte	0                       ## EOM(3)
+	.section	__DWARF,__debug_aranges,regular,debug
+	.long	44                      ## Length of ARange Set
+	.short	2                       ## DWARF Arange version number
+Lset11 = L__DWARF__debug_info_begin0-Lsection_info ## Offset Into Debug Info Section
+	.long	Lset11
+	.byte	8                       ## Address Size (in bytes)
+	.byte	0                       ## Segment Size (in bytes)
+	.space	4,255
+	.quad	Lfunc_begin0
+Lset12 = Ldebug_end0-Lfunc_begin0
+	.quad	Lset12
+	.quad	0                       ## ARange terminator
+	.quad	0
+	.section	__DWARF,__debug_ranges,regular,debug
+Lgnu_ranges0:
+	.section	__DWARF,__apple_names,regular,debug
+Lnames_begin:
+	.long	1212240712              ## Header Magic
+	.short	1                       ## Header Version
+	.short	0                       ## Header Hash Function
+	.long	1                       ## Header Bucket Count
+	.long	1                       ## Header Hash Count
+	.long	12                      ## Header Data Length
+	.long	0                       ## HeaderData Die Offset Base
+	.long	1                       ## HeaderData Atom Count
+	.short	1                       ## DW_ATOM_die_offset
+	.short	6                       ## DW_FORM_data4
+	.long	0                       ## Bucket 0
+	.long	2090499946              ## Hash in Bucket 0
+	.long	LNames0-Lnames_begin    ## Offset in Bucket 0
+LNames0:
+Lset13 = Linfo_string3-Linfo_string     ## main
+	.long	Lset13
+	.long	1                       ## Num DIEs
+	.long	39
+	.long	0
+	.section	__DWARF,__apple_objc,regular,debug
+Lobjc_begin:
+	.long	1212240712              ## Header Magic
+	.short	1                       ## Header Version
+	.short	0                       ## Header Hash Function
+	.long	1                       ## Header Bucket Count
+	.long	0                       ## Header Hash Count
+	.long	12                      ## Header Data Length
+	.long	0                       ## HeaderData Die Offset Base
+	.long	1                       ## HeaderData Atom Count
+	.short	1                       ## DW_ATOM_die_offset
+	.short	6                       ## DW_FORM_data4
+	.long	-1                      ## Bucket 0
+	.section	__DWARF,__apple_namespac,regular,debug
+Lnamespac_begin:
+	.long	1212240712              ## Header Magic
+	.short	1                       ## Header Version
+	.short	0                       ## Header Hash Function
+	.long	1                       ## Header Bucket Count
+	.long	1                       ## Header Hash Count
+	.long	12                      ## Header Data Length
+	.long	0                       ## HeaderData Die Offset Base
+	.long	1                       ## HeaderData Atom Count
+	.short	1                       ## DW_ATOM_die_offset
+	.short	6                       ## DW_FORM_data4
+	.long	0                       ## Bucket 0
+	.long	193506160               ## Hash in Bucket 0
+	.long	Lnamespac0-Lnamespac_begin ## Offset in Bucket 0
+Lnamespac0:
+Lset14 = Linfo_string8-Linfo_string     ## std
+	.long	Lset14
+	.long	1                       ## Num DIEs
+	.long	131
+	.long	0
+	.section	__DWARF,__apple_types,regular,debug
+Ltypes_begin:
+	.long	1212240712              ## Header Magic
+	.short	1                       ## Header Version
+	.short	0                       ## Header Hash Function
+	.long	2                       ## Header Bucket Count
+	.long	2                       ## Header Hash Count
+	.long	20                      ## Header Data Length
+	.long	0                       ## HeaderData Die Offset Base
+	.long	3                       ## HeaderData Atom Count
+	.short	1                       ## DW_ATOM_die_offset
+	.short	6                       ## DW_FORM_data4
+	.short	3                       ## DW_ATOM_die_tag
+	.short	5                       ## DW_FORM_data2
+	.short	4                       ## DW_ATOM_type_flags
+	.short	11                      ## DW_FORM_data1
+	.long	0                       ## Bucket 0
+	.long	1                       ## Bucket 1
+	.long	193495088               ## Hash in Bucket 0
+	.long	1303779525              ## Hash in Bucket 1
+	.long	Ltypes1-Ltypes_begin    ## Offset in Bucket 0
+	.long	Ltypes0-Ltypes_begin    ## Offset in Bucket 1
+Ltypes1:
+Lset15 = Linfo_string4-Linfo_string     ## int
+	.long	Lset15
+	.long	1                       ## Num DIEs
+	.long	85
+	.short	36
+	.byte	0
+	.long	0
+Ltypes0:
+Lset16 = Linfo_string7-Linfo_string     ## single_mem
+	.long	Lset16
+	.long	1                       ## Num DIEs
+	.long	92
+	.short	19
+	.byte	2
+	.long	0
+
+.subsections_via_symbols

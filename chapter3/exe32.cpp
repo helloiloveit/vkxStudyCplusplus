@@ -17,7 +17,7 @@ int book2 (double a){
 
 int main(){
     
-    int(*fp)(double) = book;
+    int(*fp)(double) = &book;
     fp = book;
     cout<<"Function add:"<<(void*)&book<<endl;
     P(fp);

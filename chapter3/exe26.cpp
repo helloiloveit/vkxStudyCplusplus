@@ -15,7 +15,7 @@ void set_value(void* address, int number, int value){
 }
 
 int main() {
-    int a[4];
+    int a[4] = {2,2,2,2};
     void* address = static_cast<void *>(&a);
     P(a);
     P_array(a);

@@ -1,7 +1,7 @@
 CC=g++
 OFLAG = -o
 .SUFFIXES :.o .cpp
-.cpp.o:$(CC) $(CPPFLAGS) -c $<
+.cpp.o:$(CC)  -c $<
 
 all:\
 	 exe28\

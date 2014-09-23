@@ -1,6 +1,3 @@
-//: C03:Union.cpp
-// The size and simple use of a union
-//: C06:Nojump.cpp
 // Can't jump past constructors
 //Q: this program cant run ..why.
 #include <iostream>

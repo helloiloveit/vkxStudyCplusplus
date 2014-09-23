@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 void P(int A) {
-#ifdef DEBUG_FLAG
+#ifdef aaDEBUG_FLAG
     cout << "value is : " << A <<  endl;
 #else
     cout<<"no debug info"<<endl;

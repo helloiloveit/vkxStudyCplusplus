@@ -73,7 +73,7 @@ int main() {
     P(ptr_char );
     P(pointer_long);
    // set_value(pointer, 4, 1);
-   // set_value_by_interpret_cast(ptr_unsigned_char, 4, 1);
-    set_value_by_byte(ptr_unsigned_char );
+    set_value_by_interpret_cast(ptr_unsigned_char, 4, 1);
+    //set_value_by_byte(ptr_unsigned_char );
     print_array(a, 4, 1);
 }
